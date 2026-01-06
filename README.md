@@ -61,7 +61,7 @@ This is a static project, so it does not require installing dependencies or sett
    git clone https://github.com/Karl0s83/portfolio-v2.git
 
 2.  **Open**:
-    Simply open the ´index.html´ file in your preferred browser.
+    Simply open the `index.html` file in your preferred browser.
 3.  **(Optional) Live Server**:
     For a better development experience, it is recommended to use the "Live Server" extension for VS Code.
 
