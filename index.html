@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/logo/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- Fonts: Outfit (Modern/Tech) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Carlos ET | UI/UX & Frontend</title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <!-- 1. BENTO GRID (ABOUT ME) -->
+      <div class="bento-container">
+        <!-- PROFILE (Span 2) -->
+        <div class="card profile-card" data-bbox>
+          <div class="profile-split-layout">
+            <!-- Left: Full Height Image -->
+            <div class="profile-image-container">
+              <img
+                src="assets/imgs/herophoto.jpg"
+                alt="Carlos Escribano"
+                class="hero-img-full"
+              />
+            </div>
+
+            <!-- Right: Content -->
+            <div class="profile-info">
+              <div class="profile-top-row">
+                <div class="status-badge">
+                  <span class="dot"></span>
+                  <span data-i18n="profile_status">Open to work</span>
+                </div>
+              </div>
+
+              <div class="profile-text-block">
+                <h1>Carlos Escribano Tiñena</h1>
+                <h2 class="gradient-text" data-i18n="profile_role">
+                  UI/UX, Frontend & IT
+                </h2>
+                <p data-i18n="hero_description">
+                  Me apasiona crear interfaces claras, accesibles y centradas en
+                  el usuario. Trabajo con un enfoque práctico, priorizando la
+                  usabilidad, la estructura y la atención al detalle. Me gusta
+                  aprender de forma continua, optimizar procesos y transformar
+                  ideas complejas en experiencias simples y funcionales.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LANGUAGES & CONTACT (Span 1 - iOS Folder Style) -->
+        <div class="card lang-card" data-bbox>
+          <div class="ios-folder">
+            <!-- Section 1: Languages (Row) -->
+            <div class="lang-row">
+              <button
+                onclick="setLanguage('es')"
+                class="lang-app active"
+                id="btn-es"
+              >
+                ES
+              </button>
+              <button onclick="setLanguage('ca')" class="lang-app" id="btn-ca">
+                CA
+              </button>
+              <button onclick="setLanguage('en')" class="lang-app" id="btn-en">
+                EN
+              </button>
+            </div>
+
+            <div class="divider-line"></div>
+
+            <!-- Section 2: Contact (List) -->
+            <div class="contact-list">
+              <a
+                href="https://wa.me/34666666666"
+                target="_blank"
+                class="contact-item whatsapp"
+              >
+                <div class="icon-box">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <span class="contact-text" data-i18n="tooltip_whatsapp"
+                  >Contáctame por WhatsApp</span
+                >
+              </a>
+              <a
+                href="https://www.linkedin.com/in/carlos-escribano-ti%C3%B1ena/"
+                target="_blank"
+                class="contact-item linkedin"
+              >
+                <div class="icon-box">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <span class="contact-text" data-i18n="tooltip_linkedin"
+                  >Me puedes encontrar aquí</span
+                >
+              </a>
+              <a href="mailto:tuemail@example.com" class="contact-item email">
+                <div class="icon-box">
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+                <span class="contact-text" data-i18n="tooltip_email"
+                  >Envíame un correo</span
+                >
+              </a>
+              <a
+                href="assets/cv_carlos.pdf"
+                target="_blank"
+                class="contact-item cv"
+              >
+                <div class="icon-box">
+                  <i class="fa-solid fa-file-arrow-down"></i>
+                </div>
+                <span class="contact-text" data-i18n="btn_download_cv"
+                  >Descargar CV</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- TECH STACK (Span 3 - Full Width) -->
+        <div class="card stack-card" data-bbox>
+          <div class="stack-header">
+            <h3 data-i18n="skills_title">Tech Stack</h3>
+            <div class="bento-tabs">
+              <button
+                class="tab active"
+                aria-controls="hard"
+                data-i18n="skills_hard"
+              >
+                Hard
+              </button>
+              <button class="tab" aria-controls="soft" data-i18n="skills_soft">
+                Soft
+              </button>
+            </div>
+          </div>
+
+          <!-- Panels Container (Overlap Config) -->
+          <div class="panels-container">
+            <!-- Hard Skills Panel -->
+            <div id="hard" class="panel active-panel">
+              <div class="stack-grid">
+                <div class="tech-item">
+                  <i class="fa-brands fa-html5"></i><span>HTML5</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fa-brands fa-css3-alt"></i><span>CSS3</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fa-brands fa-js"></i><span>JS</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fa-brands fa-react"></i><span>React</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fa-brands fa-figma"></i><span>Figma</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fa-brands fa-wordpress"></i><span>WordPress</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fa-brands fa-aws"></i><span>AWS</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fa-brands fa-linux"></i><span>Linux</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Soft Skills Panel -->
+            <div id="soft" class="panel">
+              <ul class="soft-list">
+                <li>Organización</li>
+                <li>Comunicación</li>
+                <li>Resolución de problemas</li>
+                <li>Atención al detalle</li>
+                <li>Trabajo en equipo</li>
+                <li>Gestión del tiempo</li>
+                <li>Flexibilidad</li>
+                <li>Empatía</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Bento Container -->
+
+      <!-- 2. PROJECTS SECTION (Separate) -->
+      <section class="projects-section">
+        <h2 class="section-title" data-i18n="projects_title">
+          Proyectos Destacados
+        </h2>
+
+        <div class="projects-grid">
+          <!-- Project 1: Roquetes -->
+          <div class="project-card-v2">
+            <!-- Full Background Image -->
+            <div
+              class="p-bg"
+              style="background-image: url('assets/projects/roquetes_logo.jpg')"
+            ></div>
+            <!-- Interactive Overlay -->
+            <div class="p-overlay">
+              <h3>Roquetes Turisme</h3>
+              <p>Web Oficial · WordPress + Divi</p>
+              <a
+                href="https://roquetesturisme.cat"
+                target="_blank"
+                class="p-link-btn"
+              >
+                Visitar <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2: Bash -->
+          <div class="project-card-v2">
+            <!-- Using a dark gradient or terminal image for Bash -->
+            <div
+              class="p-bg"
+              style="
+                background: radial-gradient(circle at center, #1a1a1a, #000);
+              "
+            ></div>
+            <div
+              class="p-overlay"
+              style="opacity: 1; transform: none; bottom: 0; background: none"
+            >
+              <!-- Always visible for utility scripts? Or styled same? Let's style same for consistency -->
+              <div style="margin-bottom: 20px">
+                <i
+                  class="fa-solid fa-terminal"
+                  style="font-size: 3rem; color: #2ecc71"
+                ></i>
+              </div>
+              <h3>Download Organizer</h3>
+              <p>Script automático en Bash</p>
+              <a
+                href="https://github.com/Karl0s83/organize_downloads"
+                target="_blank"
+                class="p-link-btn"
+              >
+                GitHub <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="funciones.js"></script>
+  </body>
+</html>
