@@ -1,11 +1,4 @@
 {
-  "nav_home": "Home",
-  "nav_about": "About me",
-  "nav_projects": "Projects",
-  "nav_skills": "Skills",
-  "nav_contact": "Contact",
-  "nav_connections": "Connections",
-  "nav_lang": "Language",
   "profile_status": "Open to work",
   "profile_role": "UI/UX, Frontend & IT",
   "hero_greeting": "Hi! I'm Carlos, a <strong>frontend developer</strong> passionate about clear, functional interfaces with personality.",
@@ -24,10 +17,18 @@
   "skills_tools_title": "Tools:",
   "skills_cloud_title": "Systems & Cloud:",
   "skills_soft_title": "Soft Skills:",
-  "skills_soft_list": "Organization • Communication • Problem solving • Attention to detail • Teamwork • Time management • Flexibility • Empathy",
+  "soft_org": "Organization",
+  "soft_comm": "Communication",
+  "soft_prob": "Problem solving",
+  "soft_detail": "Attention to detail",
+  "soft_team": "Teamwork",
+  "soft_time": "Time management",
+  "soft_flex": "Flexibility",
+  "soft_empathy": "Empathy",
   "cv_text": "You can download my updated CV here, or find me on LinkedIn:",
   "btn_download_cv": "Download CV",
   "tooltip_whatsapp": "Contact me on WhatsApp",
   "tooltip_linkedin": "You can find me here",
-  "tooltip_email": "Send me an email"
+  "tooltip_email": "Send me an email",
+  "footer_rights": "All rights reserved."
 }

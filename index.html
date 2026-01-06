@@ -8,7 +8,6 @@
       href="assets/logo/favicon.png"
       type="image/x-icon"
     />
-    <!-- Fonts: Outfit (Modern/Tech) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,10 +28,8 @@
     <div class="main-wrapper">
       <!-- 1. BENTO GRID (ABOUT ME) -->
       <div class="bento-container">
-        <!-- PROFILE (Span 2) -->
         <div class="card profile-card" data-bbox>
           <div class="profile-split-layout">
-            <!-- Left: Full Height Image -->
             <div class="profile-image-container">
               <img
                 src="assets/imgs/herophoto.jpg"
@@ -91,20 +88,16 @@
 
             <!-- Section 2: Contact (List) -->
             <div class="contact-list">
-              <a
-                href="https://wa.me/34666666666"
-                target="_blank"
-                class="contact-item whatsapp"
-              >
+              <a href="#" class="contact-item whatsapp" id="whatsapp-link">
                 <div class="icon-box">
                   <i class="fa-brands fa-whatsapp"></i>
                 </div>
-                <span class="contact-text" data-i18n="tooltip_whatsapp"
-                  >Contáctame por WhatsApp</span
-                >
+                <span class="contact-text" data-i18n="tooltip_whatsapp">
+                  Contáctame por WhatsApp
+                </span>
               </a>
               <a
-                href="https://www.linkedin.com/in/carlos-escribano-ti%C3%B1ena/"
+                href="https://www.linkedin.com/in/#################/" /* Replace with actual LinkedIn URL */
                 target="_blank"
                 class="contact-item linkedin"
               >
@@ -115,7 +108,7 @@
                   >Me puedes encontrar aquí</span
                 >
               </a>
-              <a href="mailto:tuemail@example.com" class="contact-item email">
+              <a href="mailto:gmail@gmail.com" class="contact-item email">
                 <div class="icon-box">
                   <i class="fa-regular fa-envelope"></i>
                 </div>
@@ -192,14 +185,14 @@
             <!-- Soft Skills Panel -->
             <div id="soft" class="panel">
               <ul class="soft-list">
-                <li>Organización</li>
-                <li>Comunicación</li>
-                <li>Resolución de problemas</li>
-                <li>Atención al detalle</li>
-                <li>Trabajo en equipo</li>
-                <li>Gestión del tiempo</li>
-                <li>Flexibilidad</li>
-                <li>Empatía</li>
+                <li data-i18n="soft_org">Organización</li>
+                <li data-i18n="soft_comm">Comunicación</li>
+                <li data-i18n="soft_prob">Resolución de problemas</li>
+                <li data-i18n="soft_detail">Atención al detalle</li>
+                <li data-i18n="soft_team">Trabajo en equipo</li>
+                <li data-i18n="soft_time">Gestión del tiempo</li>
+                <li data-i18n="soft_flex">Flexibilidad</li>
+                <li data-i18n="soft_empathy">Empatía</li>
               </ul>
             </div>
           </div>
@@ -216,12 +209,10 @@
         <div class="projects-grid">
           <!-- Project 1: Roquetes -->
           <div class="project-card-v2">
-            <!-- Full Background Image -->
             <div
               class="p-bg"
               style="background-image: url('assets/projects/roquetes_logo.jpg')"
             ></div>
-            <!-- Interactive Overlay -->
             <div class="p-overlay">
               <h3>Roquetes Turisme</h3>
               <p>Web Oficial · WordPress + Divi</p>
@@ -237,7 +228,6 @@
 
           <!-- Project 2: Bash -->
           <div class="project-card-v2">
-            <!-- Using a dark gradient or terminal image for Bash -->
             <div
               class="p-bg"
               style="
@@ -248,7 +238,6 @@
               class="p-overlay"
               style="opacity: 1; transform: none; bottom: 0; background: none"
             >
-              <!-- Always visible for utility scripts? Or styled same? Let's style same for consistency -->
               <div style="margin-bottom: 20px">
                 <i
                   class="fa-solid fa-terminal"
@@ -268,6 +257,26 @@
           </div>
         </div>
       </section>
+
+      <!-- Footer -->
+      <footer class="main-footer">
+        <div class="footer-content">
+          <p>
+            &copy; <span id="year"></span> Carlos Escribano.
+            <span data-i18n="footer_rights"
+              >Todos los derechos reservados.</span
+            >
+          </p>
+          <a
+            href="https://github.com/Karl0s83"
+            target="_blank"
+            class="footer-social"
+            aria-label="GitHub Profile"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </footer>
     </div>
 
     <script src="funciones.js"></script>

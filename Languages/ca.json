@@ -1,11 +1,4 @@
 {
-  "nav_home": "Inici",
-  "nav_about": "Sobre mi",
-  "nav_projects": "Projectes",
-  "nav_skills": "Habilitats",
-  "nav_contact": "Contacte",
-  "nav_connections": "Connexions",
-  "nav_lang": "Idioma",
   "profile_status": "Disponible",
   "profile_role": "UI/UX, Frontend & IT",
   "hero_greeting": "Hola! Em dic Carlos, soc <strong>desenvolupador frontend</strong> amb passió per interfícies clares, funcionals i amb personalitat.",
@@ -24,10 +17,18 @@
   "skills_tools_title": "Eines:",
   "skills_cloud_title": "Sistemes i Cloud:",
   "skills_soft_title": "Soft Skills:",
-  "skills_soft_list": "Organització • Comunicació • Resolució de problemes • Atenció al detall • Treball en equip • Gestió del temps • Flexibilitat • Empatia",
+  "soft_org": "Organització",
+  "soft_comm": "Comunicació",
+  "soft_prob": "Resolució de problemes",
+  "soft_detail": "Atenció al detall",
+  "soft_team": "Treball en equip",
+  "soft_time": "Gestió del temps",
+  "soft_flex": "Flexibilitat",
+  "soft_empathy": "Empatia",
   "cv_text": "Pots descarregar el meu currículum actualitzat aquí, o també pots trobar-me a LinkedIn:",
   "btn_download_cv": "Descarregar CV",
   "tooltip_whatsapp": "Contacta'm per WhatsApp",
   "tooltip_linkedin": "Em pots trobar aquí",
-  "tooltip_email": "Envia'm un correu per als teus dubtes"
+  "tooltip_email": "Envia'm un correu per als teus dubtes",
+  "footer_rights": "Tots els drets reservats."
 }

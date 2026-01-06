@@ -179,6 +179,7 @@ body {
   .hero-img-full {
     mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
     -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    object-position: top;
   }
   .profile-info { padding: 20px; }
   .profile-text-block h1 { font-size: 2rem; }
@@ -214,7 +215,7 @@ body {
 }
 
 .ios-folder:hover {
-  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Language Row */
@@ -604,4 +605,47 @@ body {
   0% { opacity: 1; box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.7); }
   70% { opacity: 1; box-shadow: 0 0 0 6px rgba(46, 204, 113, 0); }
   100% { opacity: 1; }
+}
+
+/* =========================================
+   9. FOOTER
+   ========================================= */
+.main-footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.main-footer p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.footer-social {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+}
+
+.footer-social:hover {
+  background: #fff;
+  color: #000;
+  transform: translateY(-2px);
 }

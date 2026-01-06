@@ -30,13 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
 // Language Function
 async function setLanguage(lang) {
   try {
-    // 0. Ensure explicit lowercase consistency
     lang = lang.toLowerCase();
-
-    // 1. Update visual active state
     document.querySelectorAll('.lang-app').forEach(btn => btn.classList.remove('active'));
     
-    // Explicitly find the button
     const btnId = `btn-${lang}`;
     const activeBtn = document.getElementById(btnId);
     
@@ -44,7 +40,6 @@ async function setLanguage(lang) {
         activeBtn.classList.add('active');
     }
 
-    // 2. Fetch translations
     const response = await fetch(`Languages/${lang}.json`);
     if (!response.ok) throw new Error("Translation file not found");
     
@@ -52,7 +47,6 @@ async function setLanguage(lang) {
 
     document.querySelectorAll("[data-i18n]").forEach(element => {
       const key = element.getAttribute("data-i18n");
-      // 3. Text Content
       if (translations[key]) {
          if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
              element.placeholder = translations[key];
@@ -61,12 +55,70 @@ async function setLanguage(lang) {
          }
       }
     });
-
-    // Save preference
     localStorage.setItem('preferredLanguage', lang);
     document.documentElement.lang = lang;
 
+    // Update WhatsApp Message
+    if(typeof whatsappLogic !== 'undefined') {
+        whatsappLogic.updateLang(lang);
+    }
+
   } catch (error) {
     console.error("Error loading language:", error);
+    alert("Error loading language. Check console.");
   }
 }
+
+// WhatsApp Function
+const whatsappLogic = {
+    phoneNumber: "34600000000", // Replace with actual number
+    linkElement: null,
+    currentLang: 'es',
+    messages: {
+        'es': "Hola Carlos, he visto tu portfolio y me gustaría contactar contigo 🙂",
+        'en': "Hi Carlos, I saw your portfolio and I'd like to get in touch 🙂",
+        'ca': "Hola Carlos, he vist el teu portafoli i m'agradaria contactar amb tu 🙂"
+    },
+    
+    init: function() {
+        this.linkElement = document.getElementById("whatsapp-link");
+        if(!this.linkElement) return;
+
+        this.linkElement.addEventListener("click", (e) => {
+            e.preventDefault();
+            this.open();
+        });
+
+        this.linkElement.addEventListener("contextmenu", (e) => {
+            e.preventDefault();
+            const url = this.getURL();
+            navigator.clipboard.writeText(url).then(() => {
+                alert("WhatsApp link copied!");
+            });
+        });
+    },
+
+    updateLang: function(lang) {
+        this.currentLang = lang;
+    },
+
+    getURL: function() {
+        // Fallback to ES if message missing
+        const msg = this.messages[this.currentLang] || this.messages['es'];
+        return `https://wa.me/${this.phoneNumber}?text=${encodeURIComponent(msg)}`;
+    },
+
+    open: function() {
+        window.open(this.getURL(), "_blank");
+    }
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+    whatsappLogic.init();
+
+    // Footer Year
+    const yearSpan = document.getElementById("year");
+    if(yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+});
