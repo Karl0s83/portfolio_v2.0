@@ -1,40 +1,40 @@
-# Portfolio v2.0 - Carlos Escribano Tiñena
+# Portfolio v2.0 – Carlos Escribano Tiñena
 
-Bienvenido al repositorio de mi portfolio personal. Este proyecto ha sido diseñado con un enfoque "Bento Grid", priorizando una estética oscura, moderna y altamente funcional.
+Welcome to the repository of my personal portfolio. This project has been designed following a **Bento Grid** approach, prioritizing a dark, modern, and highly functional aesthetic.
 
-## Características Principales
+## Key Features
 
-- **Diseño Bento Grid**: Estructura modular y responsive que organiza la información de manera clara y atractiva.
-- **Multilenguaje (i18n)**: Soporte nativo para Español (ES), Catalán (CA) e Inglés (EN) sin recargar la página.
-- **Modo Oscuro**: Paleta de colores cuidada (`#161616` y `#0d0d0d`) para una experiencia visual elegante.
-- **Tech Stack Interactivo**: Navegación por pestañas ("Hard Skills" / "Soft Skills") con animaciones suaves.
-- **WhatsApp Dinámico**: Enlace de contacto que genera un mensaje personalizado según el idioma del usuario.
-- **Responsive**: Optimizado al 100% para móviles, tablets y escritorio.
+- **Bento Grid Design**: Modular and responsive layout that organizes information in a clear and visually appealing way.
+- **Multilanguage (i18n)**: Native support for Spanish (ES), Catalan (CA), and English (EN) without page reloads.
+- **Dark Mode**: Carefully selected color palette (`#161616` and `#0d0d0d`) for an elegant visual experience.
+- **Interactive Tech Stack**: Tab-based navigation (“Hard Skills” / “Soft Skills”) with smooth animations.
+- **Dynamic WhatsApp Contact**: Contact link that generates a personalized message based on the user’s language.
+- **Fully Responsive**: Optimized for mobile, tablet, and desktop devices.
 
-## Tecnologías
+## Technologies
 
-Este proyecto está construido con tecnologías web estándar, sin dependencias pesadas:
+This project is built using standard web technologies, without heavy dependencies:
 
-- **HTML5 Semántico**: Estructura limpia y accesible.
-- **CSS3 Moderno**: Variables CSS, Flexbox, Grid Layout y animaciones personalizadas.
-- **JavaScript (Vanilla)**: Lógica ligera para el cambio de idioma, pestañas y funcionalidades dinámicas.
-- **Google Fonts**: Tipografía 'Outfit' para un look moderno.
-- **Font Awesome**: Iconografía vectorial.
+- **Semantic HTML5**: Clean and accessible structure.
+- **Modern CSS3**: CSS variables, Flexbox, Grid Layout, and custom animations.
+- **Vanilla JavaScript**: Lightweight logic for language switching, tabs, and dynamic features.
+- **Google Fonts**: *Outfit* typeface for a modern look.
+- **Font Awesome**: Vector-based icons.
 
-## 🧠 Proceso de Diseño y Desarrollo
+## 🧠 Design & Development Process
 
-El desarrollo de este portfolio no fue lineal, sino fruto de varias iteraciones buscando el equilibrio entre **estética y funcionalidad**:
+The development of this portfolio was not linear, but the result of several iterations aimed at finding the right balance between **aesthetics and functionality**:
 
-1.  **Concepto "Bento Grid"**:
-    La idea principal fue alejarse del típico portfolio vertical "infinito". Opté por una estructura modular (Grid) que permite al reclutador ver **quién soy, qué hago y cómo contactarme** de un solo vistazo.
+1. **“Bento Grid” Concept**  
+   The main idea was to move away from the typical infinite vertical portfolio. I chose a modular grid-based structure that allows recruiters to quickly see **who I am, what I do, and how to contact me** at a glance.
 
-2.  **Evolución Visual (Glassmorphism -> Dark Premium)**:
-    Inicialmente experimenté con efectos de "cristal" intensos. Sin embargo, durante el desarrollo, decidí refinarlos hacia un estilo más **sobrio y profesional** (`#161616`), priorizando la legibilidad y el contraste, pero manteniendo toques modernos en los gradientes y bordes.
+2. **Visual Evolution (Glassmorphism → Dark Premium)**  
+   Initially, I experimented with strong glassmorphism effects. During development, I refined the design toward a more **clean and professional** style (`#161616`), prioritizing readability and contrast while keeping subtle modern touches through gradients and borders.
 
-3.  **Decisiones Técnicas (No-Frameworks)**:
-    Tomé la decisión consciente de usar **Vanilla CSS y JS**. ¿Por qué? Para demostrar dominio de los fundamentos del desarrollo web moderno (Grid, Flexbox, ES6+) y asegurar que la web cargue instantáneamente (Performance), algo que a veces se pierde con el exceso de librerías.
+3. **Technical Decisions (No Frameworks)**  
+   I consciously decided to use **Vanilla CSS and JavaScript** to demonstrate solid knowledge of modern web fundamentals (Grid, Flexbox, ES6+) and to ensure instant load times and good performance.
 
-## 📂 Estructura del Proyecto
+## 📂 Project Structure
 
 ```
 /
@@ -52,20 +52,20 @@ El desarrollo de este portfolio no fue lineal, sino fruto de varias iteraciones 
     └── ca.json
 ```
 
-## Instalación y Uso
+## Installation & Usage
 
-Este es un proyecto estático, por lo que no requiere instalación de dependencias ni servidores complejos.
+This is a static project, so it does not require installing dependencies or setting up complex servers.
 
-1.  **Clonar el repositorio**:
-    ```bash
-    git clone https://github.com/Karl0s83/portfolio-v2.git
-    ```
-2.  **Abrir**:
-    Simplemente abre el archivo `index.html` en tu navegador favorito.
-3.  **(Opcional) Live Server**:
-    Para una mejor experiencia de desarrollo, se recomienda usar la extensión "Live Server" de VS Code.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Karl0s83/portfolio-v2.git
 
-## 📧 Contacto
+2.  **Open**:
+    Simply open the ´index.html´ file in your preferred browser.
+3.  **(Optional) Live Server**:
+    For a better development experience, it is recommended to use the "Live Server" extension for VS Code.
+
+## 📧 Contact
 
 - **LinkedIn**: [Carlos Escribano Tiñena](https://www.linkedin.com/in/carlos-escribano-ti%C3%B1ena/)
 - **GitHub**: [@Karl0s83](https://github.com/Karl0s83)
