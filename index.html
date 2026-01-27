@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -14,19 +14,17 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-
     <link rel="stylesheet" href="style.css" />
     <title>Carlos ET | UI/UX & Frontend</title>
   </head>
+
   <body>
     <div class="main-wrapper">
-      <!-- 1. BENTO GRID (ABOUT ME) -->
+      <!-- ABOUT ME -->
       <div class="bento-container">
         <div class="card profile-card" data-bbox>
           <div class="profile-split-layout">
@@ -38,7 +36,6 @@
               />
             </div>
 
-            <!-- Right: Content -->
             <div class="profile-info">
               <div class="profile-top-row">
                 <div class="status-badge">
@@ -53,21 +50,37 @@
                   UI/UX, Frontend & IT
                 </h2>
                 <p data-i18n="hero_description">
-                  Me apasiona crear interfaces claras, accesibles y centradas en
-                  el usuario. Trabajo con un enfoque práctico, priorizando la
-                  usabilidad, la estructura y la atención al detalle. Me gusta
-                  aprender de forma continua, optimizar procesos y transformar
-                  ideas complejas en experiencias simples y funcionales.
+                  Especializado en crear experiencias digitales donde diseño
+                  visual y funcionalidad van de la mano. Me apasiona transformar
+                  ideas complejas en interfaces claras, accesibles y centradas
+                  en el usuario.
                 </p>
+
+                <!-- Personal Mantras / Quotes -->
+                <div class="quotes-container">
+                  <div class="quote-item">
+                    <i class="fa-solid fa-terminal quote-icon"></i>
+                    <p class="typing-quote" data-i18n="quote_1">
+                      I break things, build them again, and learn in the
+                      process.
+                    </p>
+                  </div>
+                  <div class="quote-item">
+                    <i class="fa-solid fa-rocket quote-icon"></i>
+                    <p class="fade-quote" data-i18n="quote_2">
+                      The best way to predict the future is to create it
+                      yourself.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- LANGUAGES & CONTACT (Span 1 - iOS Folder Style) -->
+        <!-- LANGUAGES & CONTACT -->
         <div class="card lang-card" data-bbox>
           <div class="ios-folder">
-            <!-- Section 1: Languages (Row) -->
             <div class="lang-row">
               <button
                 onclick="setLanguage('es')"
@@ -86,7 +99,7 @@
 
             <div class="divider-line"></div>
 
-            <!-- Section 2: Contact (List) -->
+            <!--CONTACT LIST -->
             <div class="contact-list">
               <a href="#" class="contact-item whatsapp" id="whatsapp-link">
                 <div class="icon-box">
@@ -97,7 +110,7 @@
                 </span>
               </a>
               <a
-                href="https://www.linkedin.com/in/#################/" /* Replace with actual LinkedIn URL */
+                href="https://www.linkedin.com/in/carlos-escribano-ti%C3%B1ena/"
                 target="_blank"
                 class="contact-item linkedin"
               >
@@ -108,7 +121,7 @@
                   >Me puedes encontrar aquí</span
                 >
               </a>
-              <a href="mailto:gmail@gmail.com" class="contact-item email">
+              <a href="mailto:estikarlos@gmail.com" class="contact-item email">
                 <div class="icon-box">
                   <i class="fa-regular fa-envelope"></i>
                 </div>
@@ -117,7 +130,7 @@
                 >
               </a>
               <a
-                href="assets/cv_carlos.pdf"
+                href="assets/cv/CV_Carlos_Escribanor_IT.pdf"
                 target="_blank"
                 class="contact-item cv"
               >
@@ -128,11 +141,58 @@
                   >Descargar CV</span
                 >
               </a>
+              <a href="#projects" class="contact-item projects">
+                <div class="icon-box">
+                  <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <span class="contact-text" data-i18n="btn_view_projects"
+                  >Ver proyectos</span
+                >
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- TECH STACK (Span 3 - Full Width) -->
+        <!-- ABOUT SECTION -->
+        <div class="card about-card" data-bbox>
+          <h2 data-i18n="about_title">Por qué diseño web</h2>
+          <p data-i18n="about_p1">
+            Empecé en <span class="highlight-green">IT</span>, pero descubrí
+            algo importante:
+            <span class="highlight"
+              >soy terrible con la lógica compleja del backend</span
+            >. Y está bien. Porque mi cerebro está cableado para otras cosas.
+          </p>
+          <p data-i18n="about_p2">
+            Veo una web y automáticamente pienso: "<span
+              class="highlight-orange"
+              >ese botón está mal posicionado</span
+            >", "<span class="highlight-orange"
+              >esos colores no transmiten confianza</span
+            >", "<span class="highlight-orange"
+              >este flujo confunde al usuario</span
+            >". No puedo evitarlo. Mientras otros piensan en algoritmos,
+            <span class="highlight">yo pienso en experiencias</span>.
+          </p>
+          <p data-i18n="about_p3">
+            Me especializo en
+            <span class="highlight-green">UI/UX y frontend</span> porque ahí es
+            donde tengo <span class="highlight">impacto real</span>. Trabajo con
+            HTML, CSS, JavaScript, React y Figma para crear interfaces donde
+            <span class="highlight-purple"
+              >cada elemento tiene un propósito</span
+            >. No hago magia con bases de datos, pero sí transformo información
+            compleja en algo que cualquiera puede entender en segundos.
+          </p>
+          <p data-i18n="about_p4">
+            Creo que el mejor diseño es invisible: funciona tan bien que
+            <span class="highlight-purple"
+              >nadie nota tu trabajo, solo disfrutan usándolo</span
+            >.
+          </p>
+        </div>
+
+        <!-- TECH STACK-->
         <div class="card stack-card" data-bbox>
           <div class="stack-header">
             <h3 data-i18n="skills_title">Tech Stack</h3>
@@ -150,9 +210,8 @@
             </div>
           </div>
 
-          <!-- Panels Container (Overlap Config) -->
+          <!-- PANELS CONTAINER -->
           <div class="panels-container">
-            <!-- Hard Skills Panel -->
             <div id="hard" class="panel active-panel">
               <div class="stack-grid">
                 <div class="tech-item">
@@ -185,48 +244,81 @@
             <!-- Soft Skills Panel -->
             <div id="soft" class="panel">
               <ul class="soft-list">
-                <li data-i18n="soft_org">Organización</li>
-                <li data-i18n="soft_comm">Comunicación</li>
-                <li data-i18n="soft_prob">Resolución de problemas</li>
-                <li data-i18n="soft_detail">Atención al detalle</li>
-                <li data-i18n="soft_team">Trabajo en equipo</li>
-                <li data-i18n="soft_time">Gestión del tiempo</li>
-                <li data-i18n="soft_flex">Flexibilidad</li>
-                <li data-i18n="soft_empathy">Empatía</li>
+                <li data-i18n="soft_user_focus">
+                  <i class="fa-solid fa-users"></i>
+                  <span>Enfoque en el usuario</span>
+                </li>
+                <li data-i18n="soft_detail">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <span>Atención al detalle</span>
+                </li>
+                <li data-i18n="soft_prob">
+                  <i class="fa-solid fa-lightbulb"></i>
+                  <span>Resolución de problemas</span>
+                </li>
+                <li data-i18n="soft_comm">
+                  <i class="fa-solid fa-comments"></i>
+                  <span>Comunicación clara</span>
+                </li>
+                <li data-i18n="soft_collab">
+                  <i class="fa-solid fa-people-group"></i>
+                  <span>Colaboración</span>
+                </li>
+                <li data-i18n="soft_adapt">
+                  <i class="fa-solid fa-arrows-rotate"></i>
+                  <span>Adaptabilidad</span>
+                </li>
+                <li data-i18n="soft_iterate">
+                  <i class="fa-solid fa-repeat"></i>
+                  <span>Diseño iterativo</span>
+                </li>
+                <li data-i18n="soft_org">
+                  <i class="fa-solid fa-list-check"></i>
+                  <span>Organización</span>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-      <!-- End Bento Container -->
-
-      <!-- 2. PROJECTS SECTION (Separate) -->
-      <section class="projects-section">
+      <!-- PROJECTS SECTION -->
+      <section id="projects" class="projects-section">
         <h2 class="section-title" data-i18n="projects_title">
           Proyectos Destacados
         </h2>
 
         <div class="projects-grid">
-          <!-- Project 1: Roquetes -->
+          <!-- Project 1: Roquetes Turisme -->
           <div class="project-card-v2">
             <div
               class="p-bg"
-              style="background-image: url('assets/projects/roquetes_logo.jpg')"
+              style="
+                background-image: url(&quot;assets/projects/roquetes_logo.jpg&quot;);
+              "
             ></div>
             <div class="p-overlay">
+              <div class="project-tags">
+                <span class="tag">WordPress</span>
+                <span class="tag">Divi</span>
+                <span class="tag">Tourism</span>
+              </div>
               <h3>Roquetes Turisme</h3>
-              <p>Web Oficial · WordPress + Divi</p>
+              <p data-i18n="project_roquetes_desc">
+                Web oficial de turismo con rutas interactivas, agenda de eventos
+                y sistema multiidioma para promover el turismo local.
+              </p>
               <a
                 href="https://roquetesturisme.cat"
                 target="_blank"
                 class="p-link-btn"
               >
-                Visitar <i class="fa-solid fa-arrow-right"></i>
+                <span data-i18n="btn_visit_site">Visitar</span>
+                <i class="fa-solid fa-arrow-right"></i>
               </a>
             </div>
           </div>
 
-          <!-- Project 2: Bash -->
+          <!-- Project 2: Download Organizer -->
           <div class="project-card-v2">
             <div
               class="p-bg"
@@ -244,8 +336,16 @@
                   style="font-size: 3rem; color: #2ecc71"
                 ></i>
               </div>
+              <div class="project-tags">
+                <span class="tag">Bash</span>
+                <span class="tag">Automation</span>
+                <span class="tag">Linux</span>
+              </div>
               <h3>Download Organizer</h3>
-              <p>Script automático en Bash</p>
+              <p data-i18n="project_organizer_desc">
+                Script automático en Bash que organiza archivos de descargas por
+                tipo, mejorando la productividad del sistema.
+              </p>
               <a
                 href="https://github.com/Karl0s83/organize_downloads"
                 target="_blank"

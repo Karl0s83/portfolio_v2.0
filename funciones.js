@@ -71,7 +71,7 @@ async function setLanguage(lang) {
 
 // WhatsApp Function
 const whatsappLogic = {
-    phoneNumber: "34600000000", // Replace with actual number
+    phoneNumber: "34644346743", // Replace with actual number
     linkElement: null,
     currentLang: 'es',
     messages: {
