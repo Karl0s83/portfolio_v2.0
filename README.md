@@ -52,19 +52,6 @@ The development of this portfolio was not linear, but the result of several iter
     └── ca.json
 ```
 
-## Installation & Usage
-
-This is a static project, so it does not require installing dependencies or setting up complex servers.
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/Karl0s83/portfolio-v2.git
-
-2.  **Open**:
-    Simply open the `index.html` file in your preferred browser.
-3.  **(Optional) Live Server**:
-    For a better development experience, it is recommended to use the "Live Server" extension for VS Code.
-
 ## 📧 Contact
 
 - **LinkedIn**: [Carlos Escribano Tiñena](https://www.linkedin.com/in/carlos-escribano-ti%C3%B1ena/)
